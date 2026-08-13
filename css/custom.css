@@ -116,7 +116,7 @@ body{
 }
 
 .container{
-	max-width: 1300px;
+	max-width: 1400px;
 }
 
 .container,
@@ -531,7 +531,7 @@ body{
 }
 
 .topbar-social-icons ul li a:hover i{
-	color: var(--primary-color);
+	color: var(--white-color);
 }
 
 header.main-header{
@@ -2727,7 +2727,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-menu ul li a:hover{
-    color: var(--accent-color);
+    color: var(--white-color);
 }
 
 .footer-menu ul li:last-child{
@@ -2743,7 +2743,7 @@ header.main-header .header-sticky.active{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding: 100px 0;
+	padding: 80px 0;
 }
 
 .page-header-box{
@@ -2782,6 +2782,7 @@ header.main-header .header-sticky.active{
 
 .page-header-box ol .breadcrumb-item+.breadcrumb-item::before{
     color: var(--white-color);
+    content: "/";
 }
 
 .our-features{
@@ -4684,7 +4685,10 @@ header.main-header .header-sticky.active{
 /************************************/
 
 @media only screen and (max-width: 1024px){
-	
+		.responsive-menu,
+    .navbar-toggle{
+        display: block;
+    }
 	.our-consultancy::before{
 		right: -165px;
 		width: 336px;
@@ -4752,10 +4756,7 @@ header.main-header .header-sticky.active{
         display: block;
     }
 
-	.responsive-menu,
-    .navbar-toggle{
-        display: block;
-    }
+
 
 	.header-btn{
 		display: none;
@@ -6139,4 +6140,35 @@ header.main-header .header-sticky.active{
 	.google-map-iframe iframe{
 		height: 350px;
 	}
+}
+
+/* Sticky WhatsApp Icon */
+.sticky-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 35px;
+    z-index: 1000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-whatsapp:hover {
+    background-color: #128c7e;
+    color: white;
+    transform: scale(1.1);
+}
+
+.sticky-whatsapp i {
+    margin: 0;
 }
